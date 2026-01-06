@@ -59,13 +59,13 @@
   <body>
     <main>
       <h1>module/auth - V8 module</h1>
-      <p class="intro">This module is a small helper you can drop into workflows that need to attach a token to outbound requests. It keeps the calling code tidy and consistent without pulling in extra dependencies.</p>
+      <p class="intro">This module is a tiny helper for adding bearer tokens to HTTP headers so you can keep workflow code clean and consistent. It is intentionally minimal and focused on one job.</p>
       <p class="muted">Learn more at <a href="https://instago.ai" target="_blank" rel="noopener">https://instago.ai</a>.</p>
       <div class="section">
         <h2>Technical reference</h2>
         <h1>module/auth - V8 module</h1>
-<p>This module is a small helper you can drop into workflows that need to attach a token to outbound requests. It keeps the calling code tidy and consistent without pulling in extra dependencies.</p>
-<p>It runs inside the hgi-v8 environment and pairs well with other modules in this repo. Learn more at https://instago.ai.</p>
+<p>This module is a tiny helper for adding bearer tokens to HTTP headers so you can keep workflow code clean and consistent. It is intentionally minimal and focused on one job.</p>
+<p>It is designed for the hgi-v8 runtime and pairs well with the other modules in this repository. Learn more at https://instago.ai.</p>
 <h2>Technical reference</h2>
 <p>Exports</p>
 <ul>
@@ -73,7 +73,7 @@
 </ul>
 <p>Usage</p>
 <ul>
-<li><code>bearer</code> returns an object you can merge into request headers.</li>
+<li>Call <code>bearer</code> with a token string and merge the returned object into your request headers.</li>
 </ul>
 <p>Configuration</p>
 <ul>
@@ -89,7 +89,15 @@ const headers = Object.assign(
 );
 </code></pre>
       </div>
-      
+      <div class="section">
+  <h2>Changelog</h2>
+  <h2>v1.0.1 - Auth Module Maintenance Release</h2>
+<p>Maintenance release for the auth module with updated release metadata and changelog; no functional changes.</p>
+<h3>Changed</h3>
+<ul>
+<li>Updated release metadata and created the changelog entry.</li>
+</ul>
+</div>
     </main>
   </body>
 </html>

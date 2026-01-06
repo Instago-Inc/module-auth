@@ -1,8 +1,8 @@
 # module/auth - V8 module
 
-This module is a small helper you can drop into workflows that need to attach a token to outbound requests. It keeps the calling code tidy and consistent without pulling in extra dependencies.
+This module is a tiny helper for adding bearer tokens to HTTP headers so you can keep workflow code clean and consistent. It is intentionally minimal and focused on one job.
 
-It runs inside the hgi-v8 environment and pairs well with other modules in this repo. Learn more at https://instago.ai.
+It is designed for the hgi-v8 runtime and pairs well with the other modules in this repository. Learn more at https://instago.ai.
 
 ## Technical reference
 
@@ -10,7 +10,7 @@ Exports
 - `bearer(key)` -> `{ Authorization: 'Bearer <key>' }`
 
 Usage
-- `bearer` returns an object you can merge into request headers.
+- Call `bearer` with a token string and merge the returned object into your request headers.
 
 Configuration
 - No configuration or env keys are required.
